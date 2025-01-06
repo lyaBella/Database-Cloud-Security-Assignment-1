@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main_banner {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-bottom: black solid 2px;
+  padding: 40px;
+  height: 20px;
+}
+
+.left_section {
+  flex: 1;
+}
+
+.middle_section {
+  display: flex;
+}
+
+.right_section{
+  flex: 1;
+}
+
+#mmu_logo {
+  width: 210px;
+}
+
+#login_box {
+ display: flex;
+ justify-content: center;
+ float: right;
+ text-decoration: none;
+ background-color: red;
+ border: black solid 1px;
+ width: 90px;
+ margin: 4px;
+ order: 2;
+ /* Text Styling */
+ font-family: cambria;
+ font-size: 16px;
+ color: white;
+ padding: 3px;
+}
+
+#login_box:hover {
+  color: black;
+  transition: 0.7s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.courses_button {
+  display: flex;
+  text-align: center;
+  float: left;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  /* Text Styling */
+  font-family: perpetua;
+  font-size: 22px;
+  padding: 20px 20px 20px 5px;
+}
+
+.courses_button:hover {
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  margin-top: 66px;
+  z-index: 1;
+}
+
+.dropdown_content .menu{
+  list-style-type: none;
+}
+
+.dropdown_content .menu li {
+  font-family: perpetua;
+  color: black;
+  font-size: 18px;
+  padding: 25px 15px 25px 18px;
+  min-width: 200px;
+  display: block;
+  border-left: solid black 1px;
+  border-bottom:solid black 1px;
+  /* border-radius: 10px; */
+}
+
+/* Removes the underline from the menu and styles the menu links */
+.dropdown_content .menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown_content .menu li:hover {
+  background-color: rgba(209, 209, 209, 0.6);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+  background-color: white;
+}
+
+.image_wrapper {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+#banner_image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.submenu {
+  display: none;
+  background-color: white;
+  margin-left: 215px;
+  margin-top: -45.5px;
+}
+
+.course_dropdown:hover .submenu {
+  position: absolute;
+  display: block;
+}
+
+/* Lets the box of the courses be big enough to hyperlink */
+#course_links {
+  margin-right: -12px;
+  padding: 20px 140px 20px 0px;
+}
+
+#course_links:hover {
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.7s;
+}
+
+#menu_effects {
+  padding: 15px 80px 22px 0px;
+}
+
+#menu_effects:hover {
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.shopping_cart_icon {
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 25px 4px 4px;
+  width: 30px;
+  height: 26px;
+  order: 1;
+}
+
+#shopping_button {
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+#shopping_button:hover {
+  background-color: rgba(209, 209, 209, 0.8);
+  transition: 0.7s;
+  cursor: pointer;
+}

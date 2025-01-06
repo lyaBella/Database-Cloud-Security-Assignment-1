@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main_banner {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-bottom: black solid 2px;
+  padding: 40px;
+  height: 20px;
+}
+
+.left_section {
+  flex: 1;
+}
+
+.middle_section {
+  display: flex;
+}
+
+.right_section{
+  flex: 1;
+}
+
+#mmu_logo {
+  width: 210px;
+  margin-left: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.courses_button {
+  display: flex;
+  text-align: center;
+  float: left;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  /* Text Styling */
+  font-family: perpetua;
+  font-size: 22px;
+  padding: 20px 20px 20px 5px;
+}
+
+.courses_button:hover {
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  margin-top: 66px;
+  z-index: 1;
+}
+
+.dropdown_content .menu{
+  list-style-type: none;
+}
+
+.dropdown_content .menu li {
+  font-family: perpetua;
+  color: black;
+  font-size: 18px;
+  padding: 25px 15px 25px 18px;
+  min-width: 200px;
+  display: block;
+  border-left: solid black 1px;
+  border-bottom:solid black 1px;
+  /* border-radius: 10px; */
+}
+
+/* Removes the underline from the menu and styles the menu links */
+.dropdown_content .menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown_content .menu li:hover {
+  background-color: rgba(209, 209, 209, 0.6);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+  background-color: white;
+}
+
+.submenu {
+  display: none;
+  background-color: white;
+  margin-left: 215px;
+  margin-top: -45.5px;
+}
+
+.course_dropdown:hover .submenu {
+  position: absolute;
+  display: block;
+}
+
+/* Lets the box of the courses be big enough to hyperlink */
+#course_links {
+  margin-right: -12px;
+  padding: 20px 140px 20px 0px;
+}
+
+#course_links:hover {
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.7s;
+}
+
+#menu_effects {
+  padding: 15px 80px 22px 0px;
+}
+
+#menu_effects:hover {
+  color: rgba(217, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+/*------------------------Unique STUDENT LIST code ----------------------- */
+
+.text_box {
+  margin-top: 80px;
+  font-family: garamond;
+  font-size: 18px;
+}
+
+.student_list_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 247, 230, 0.8);
+  height: 1200px;
+}
+
+.student_list_box {
+  overflow-x: auto;
+  margin-top: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+#number_cell {
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(0, 140, 255, 0.4);
+}
+
+#student_cell {
+  padding: 10px 200px 10px 200px;
+  background-color: rgba(0, 140, 255, 0.4);
+}
+
+#class_cell {
+  background-color: rgba(0, 140, 255, 0.4);
+}
+
+.student_list_box tr th {
+text-align: center;
+border: solid black 1px;
+}
+
+.student_list_box tr td {
+text-align: center;
+word-wrap: normal;
+padding: 10px;
+border: solid black 1px;
+}
+
+.student_list_box tr td:hover {
+  color: rgba(216, 162, 47, 0.9);
+  transition: 0.5s;
+}
+
